@@ -70,11 +70,46 @@
 //   console.log("Welcome JavaScript");
 // }
 
-
 // 12. Find the factorial of a number.
+
 // let n = prompt("Enter a number: ");
 // let fact = 1;
 // for (let i = 1; i <= n; i++) {
 //   fact *= i;
 // }
 // console.log(fact);
+
+// 13. Check if a number is even or odd using loop logic.
+
+// let n = +prompt("Enter a number: ");
+// for (let i = 1; i <= n; i++) {
+//   if(i%2==0) console.log(`${i} is Even`);
+//   else console.log(`${i} is Odd`);
+
+// }
+
+// 14. Calculate the sum of digits of a number.
+// let sum = 0;
+// let n = +prompt("Enter a number: ");
+
+// while (n > 0) {
+//   let last = n % 10;
+//   sum += last;
+//   n = Math.floor(n / 10);
+// }
+// console.log(sum);
+
+// 15. Reverse a number using a loop.
+
+// let n = 123,
+//   rev = 0;
+// while (n) {
+//   let last = n % 10;
+//   rev = rev * 10 + last;
+//   n = Math.floor(n / 10);
+// }
+// console.log(rev);
+
+
+// 16. Count total digits in a number.
+
