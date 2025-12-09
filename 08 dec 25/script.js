@@ -110,6 +110,12 @@
 // }
 // console.log(rev);
 
-
 // 16. Count total digits in a number.
 
+// let n = +prompt("Enter a number: ");
+// let count = 0;
+// while (n > 0) {
+//   count++;
+//   n = Math.floor(n / 10);
+// }
+// console.log("Total digits:", count);
