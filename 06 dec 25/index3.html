@@ -1,0 +1,45 @@
+<!-- Question 3. Your backend receives an order status:
+"PENDING", "DISPATCHED", "SHIPPED", "DELIVERED", "CANCELLED"
+Each status should return a different message. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let orderStatus = "SHIPPED";
+
+        switch (orderStatus) {
+            case "PENDING":
+                console.log("Order is Pending");
+                break;
+
+            case "DISPATCHED":
+                console.log("Order Dispatched");
+                break;
+
+            case "SHIPPED":
+                console.log("Order Shipped");
+                break;
+
+            case "DELIVERED":
+                console.log("Order Delivered");
+                break;
+
+            case "CANCELLED":
+                console.log("Order Cancelled");
+                break;
+
+            default:
+                console.log("Invalid Status");
+        }
+    </script>
+</body>
+
+</html>

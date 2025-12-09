@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Coercion Practice</title>
+</head>
+
+<body>
+
+    <script>
+        //50 Practical JavaScript Type Coercion & Conversion
+        // Questions 🧪
+
+
+        // A. Number Coercion (1–10)
+        // What is the result of the following expressions?
+
+        console.log('10' - 5);          // 5
+        console.log('10' * '2');        // 20
+        console.log('50' / []);         // Infinity
+        console.log('1' + -1);          // "1-1"
+        console.log(+ '100');           // 100
+        console.log('Infinity' * 0);    // NaN
+        console.log('1.5' % 1);         // 0.5
+        console.log(+'0xf');            // 15
+        console.log(10 - null);         // 10
+        console.log(10 * undefined);    // NaN
+
+
+        // B. String Coercion and Concatenation (11–20)
+        // What is the result of the following expressions?
+
+        console.log('hello' + 5);       // "hello5"
+        console.log(1 + 2 + '3');       // "33"
+        console.log('3' + 2 + 1);       // "321"
+        console.log('Result: ' + true); // "Result: true"
+        console.log([] + 1 + 2);        // "12"
+        console.log('a' + {});          // "a[object Object]"
+        console.log('100' + null);      // "100null"
+        console.log(undefined + ' World'); // "undefined World"
+        console.log((function () { }) + ' is a function'); // "function(){} is a function"
+        console.log(5 + 5 + 'a' + 5 + 5); // "10a55"
+
+
+
+        // C. Boolean Coercion (Falsy & Truthy) (21–30)
+        // What is the resulting boolean value when these
+        // expressions are evaluated in a boolean context (e.g., if
+        // statement or using Boolean()/!!)?
+
+        console.log(Boolean(0));        // false
+        console.log(Boolean(-0));       // false
+        console.log(Boolean(''));       // false
+        console.log(Boolean(null));     // false
+        console.log(Boolean(undefined));// false
+        console.log(Boolean(NaN));      // false
+        console.log(Boolean([]));       // true
+        console.log(Boolean({}));       // true
+        console.log(Boolean('false'));  // true
+        console.log(!!1n);              // true
+
+
+
+        // D. Loose Equality (==) Coercion (31–40)
+        // Determine if the following loose equality comparisons
+        // evaluate to true or false.
+
+        console.log(1 == true);         // true
+        console.log('0' == false);      // true
+        console.log(null == undefined); // true
+        console.log(0 == null);         // false
+        console.log('' == 0);           // true
+        console.log('1' == true);       // true
+        console.log('1' == [1]);        // true
+        console.log([] == 0);           // true
+        console.log(!0 == true);        // true
+        console.log([1, 2] == '1,2');    // true
+
+
+
+        // E. Explicit Conversions (Conversion Methods) (41–50)
+        // What is the result of the following explicit conversion
+        // operations?
+
+        console.log(Number(false));     // 0
+        console.log(String(NaN));       // "NaN"
+        console.log(parseInt('42px', 10)); // 42
+        console.log(parseFloat('3.14159')); // 3.14159
+        console.log(Boolean('0'));      // true
+        console.log((100).toString(16));// "64"
+        console.log(Number(''));        // 0
+        console.log(String(null));      // "null"
+        console.log(Boolean(NaN));      // false
+        console.log(parseInt(0.999));   // 0
+    </script>
+</body>
+
+</html>

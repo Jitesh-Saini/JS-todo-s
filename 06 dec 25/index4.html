@@ -1,0 +1,22 @@
+<!-- Question 4. The user gets blocked if failed login attempts exceed 5. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let failedAttempts = 6;
+
+        let status = (failedAttempts > 5) ? "User Blocked" : "User Active";
+
+        console.log(status);
+    </script>
+</body>
+
+</html>

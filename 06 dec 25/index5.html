@@ -1,0 +1,53 @@
+<!-- Question 5. Your payment API receives paymentMethod and amount.
+Rules:
+● If UPI → minimum ₹1 and max ₹1,00,000
+● If CARD → minimum ₹100
+● If WALLET → user wallet balance must be ≥ amount
+● Otherwise → invalid method -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let paymentMethod = "UPI";
+        let amount = 500;
+        let walletBalance = 1000;
+
+        if (paymentMethod == "UPI") {
+            if (amount >= 1 && amount <= 100000) {
+                console.log("Payment Successful");
+            }
+            else {
+                console.log("Invalid Amount for UPI");
+            }
+        }
+        else if (paymentMethod == "CARD") {
+            if (amount >= 100) {
+                console.log("Payment Successful");
+            }
+            else {
+                console.log("Amount too low for Card");
+            }
+        }
+        else if (paymentMethod == "WALLET") {
+            if (walletBalance >= amount) {
+                console.log("Payment Successful");
+            }
+            else {
+                console.log("Insufficient Balance");
+            }
+        }
+        else {
+            console.log("Invalid Payment Method");
+        }
+    </script>
+</body>
+
+</html>

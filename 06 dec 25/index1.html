@@ -1,0 +1,35 @@
+<!-- Question 1. A company dashboard should allow access only if:
+● User role is "admin" OR
+● User role is "manager" AND login time is between 9am–6pm
+Otherwise, deny access. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let userRole = "admin";
+        let loginTime = 14;
+
+        if (userRole == "admin" || userRole == "manager") {
+
+            if (loginTime >= 9 && loginTime <= 18) {
+                console.log("Access Granted");
+            } else {
+                console.log("Access Denied");
+            }
+
+        } else {
+            console.log("Access Denied");
+        }
+    </script>
+</body>
+
+</html>

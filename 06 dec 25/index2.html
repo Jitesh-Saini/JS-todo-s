@@ -1,0 +1,40 @@
+<!-- Question 2. Apply discount based on purchase amount:
+● ≥ ₹10,000 → 25%
+● ≥ ₹5,000 → 15%
+● ≥ ₹2,000 → 10%
+● Otherwise → 0% -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let amount = 10000;
+        let finalDiscount = 0;
+
+        if (amount >= 10000) {
+            finalDiscount = (amount * 25) / 100;
+        }
+        else if (amount >= 5000) {
+            finalDiscount = (amount * 15) / 100;
+        }
+        else if (amount >= 2000) {
+            finalDiscount = (amount * 10) / 100;
+        }
+        else {
+            finalDiscount = 0;
+        }
+
+        console.log("Original Amount: " + amount);
+        console.log("Discount Amount: " + finalDiscount);
+        console.log("Final Price To Pay: " + (amount - finalDiscount));
+    </script>
+</body>
+
+</html>
