@@ -29,3 +29,52 @@
 //   sum += i;
 // }
 // console.log(sum);
+
+// 6. Print multiplication table of a given number.
+
+// let prom = prompt("Enter a number: ");
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`${prom} * ${i} = ${prom * i}`);
+// }
+
+// 7. Count numbers divisible by 3 between 1 and 100.
+
+// let count = 0;
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 3 == 0) count++;
+// }
+// console.log(count);
+
+// 8. Print squares of numbers from 1 to 20.
+
+// for (let i = 1; i <= 20; i++) {
+//   console.log(i*i);
+// }
+
+// 9. Print cubes of numbers from 1 to 15.
+
+// for (let i = 1; i <= 15; i++) {
+//   console.log(i*i*i);
+// }
+
+// 10. Print each character of a string.
+
+// let str = "Hello";
+// for (let i = 0; i < str.length; i++) {
+//   console.log(str[i]);
+// }
+
+// 11. Print "Welcome JavaScript" 10 times using loop.
+
+// for (let i = 0; i <= 10; i++) {
+//   console.log("Welcome JavaScript");
+// }
+
+
+// 12. Find the factorial of a number.
+// let n = prompt("Enter a number: ");
+// let fact = 1;
+// for (let i = 1; i <= n; i++) {
+//   fact *= i;
+// }
+// console.log(fact);
