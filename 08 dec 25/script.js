@@ -132,7 +132,77 @@
 // if (temp == rev) console.log(`${temp} is a Palindrome`);
 // else console.log(`${temp} is not a Palindrome`);
 
-
 // 18. Check whether a number is prime.
 
-let n = +prompt("Enter a number: ")
+// let n = +prompt("Enter a number: ");
+// if (n <= 1) {
+//   console.log(`${n} is not a Prime Number`);
+// } else {
+//   let isPrime = true;
+//   for (let i = 2; i <= Math.sqrt(n); i++) {
+//     if (n % i === 0) {
+//       isPrime = false;
+//       break;
+//     }
+//   }
+//   if (isPrime) console.log(`${n} is a Prime Number`);
+//   else console.log(`${n} is not a Prime Number`);
+// }
+
+// 19. Print all prime numbers from 1 to 100.
+
+// for (let num = 2; num <= 100; num++) {
+//     let isPrime = true;
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//       if (num % i === 0) {
+//         isPrime = false;
+//         break;
+//       }
+//     }
+//     if (isPrime) console.log(num);
+// }
+
+// 20. Count vowels in a string.
+
+// let str = "Hello World";
+// let count = 0;
+// for (let i = 0; i < str.length; i++) {
+//   let ch = str[i];
+//   if (
+//     ch == "a" ||
+//     ch == "e" ||
+//     ch == "i" ||
+//     ch == "o" ||
+//     ch == "u" ||
+//     ch == "A" ||
+//     ch == "E" ||
+//     ch == "I" ||
+//     ch == "O" ||
+//     ch == "U"
+//   ) {
+//     count++;
+//   }
+// }
+// console.log("Total Vowels:", count);
+
+// 21. Count consonants in a string.
+// let str = "Hello World";
+// let count = 0;
+// for (let i = 0; i < str.length; i++) {
+//   let ch = str[i];
+//   if (
+//     ch != "a" &&
+//     ch != "e" &&
+//     ch != "i" &&
+//     ch != "o" &&
+//     ch != "u" &&
+//     ch != "A" &&
+//     ch != "E" &&
+//     ch != "I" &&
+//     ch != "O" &&
+//     ch != "U"
+//   ) {
+//     count++;
+//   }
+// }
+// console.log("Total Consonants:", count);
