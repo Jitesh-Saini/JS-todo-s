@@ -119,3 +119,20 @@
 //   n = Math.floor(n / 10);
 // }
 // console.log("Total digits:", count);
+
+// 17. Check whether a number is palindrome.
+// let n = +prompt("Enter a number: ");
+// let rev = 0,
+//   temp = n;
+// while (n) {
+//   let last = n % 10;
+//   rev = rev * 10 + last;
+//   n = Math.floor(n / 10);
+// }
+// if (temp == rev) console.log(`${temp} is a Palindrome`);
+// else console.log(`${temp} is not a Palindrome`);
+
+
+// 18. Check whether a number is prime.
+
+let n = +prompt("Enter a number: ")
