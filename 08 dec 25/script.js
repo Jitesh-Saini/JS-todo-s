@@ -206,3 +206,35 @@
 //   }
 // }
 // console.log("Total Consonants:", count);
+
+// 22. Print Fibonacci series up to n terms.
+
+// let n = +prompt("Enter number of terms: ");
+// let a = 0, b = 1;
+// console.log("Fibonacci Series:");
+// for (let i = 1; i <= n; i++) {
+//   console.log(a);
+//   let next = a + b;
+//   a = b;
+//   b = next;
+// }
+
+// 29. Print multiplication tables from 1 to 10.
+
+// for (let j = 1; j <= 10; j++) {
+//   for (let i = 1; i <= 10; i++) {
+//     console.log(`${j} * ${i} = ${j * i}`);
+//   }
+//   console.log("\n");
+
+// }
+
+// 30. Print reverse counting with a gap of 2.
+
+// for (let i = 100; i >= 0; i=i-2) {
+//   console.log(i);
+// }
+
+// 31. Count total words in a sentence.
+
+
