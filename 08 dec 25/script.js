@@ -237,4 +237,28 @@
 
 // 31. Count total words in a sentence.
 
+// let str = prompt("Enter a sentence: ");
+// let count = 1;
+// for (let i = 0; i < str.length; i++) {
+//   if (str[i] == " ") {
+//     count++;
+//   }
+// }
+// console.log(count);
 
+// 32. Reverse a string using a loop.
+
+// let str = prompt("Enter a string: ");
+// let rev = "";
+// for (let i = str.length - 1; i >= 0; i--) {
+//   rev += str[i];
+// }
+// console.log("Reversed string:", rev);
+
+let str = prompt("Enter a string: ");
+let rev = "";
+for (let i = str.length - 1; i >= 0; i--) {
+  rev += str[i];
+}
+if (str === rev) console.log("Palindrome");
+else console.log("Not Palindrome");
