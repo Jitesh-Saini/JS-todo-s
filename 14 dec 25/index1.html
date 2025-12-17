@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+</head>
+
+<body>
+    <script>
+        let a1 = 10;
+        console.log(++a1 + a1++);        // 22
+
+        let x2 = 5;
+        console.log(x2++ + ++x2);        // 12
+
+        let a3 = 10;
+        console.log(a3++ + ++a3 + a3);   // 34
+
+        let x4 = 10;
+        let y4 = x4++ * 2;
+        console.log(x4, y4);             // 11 20
+
+        let a5 = 5;
+        console.log(a5-- + --a5);        // 8
+
+        console.log(10 + "5" - 2);        // 103
+
+        console.log("10" - "5" + 2);      // 7
+
+        console.log("5" * "2" + 1);       // 11
+
+        console.log(10 > 5 > 2);          // false
+
+        console.log(10 == "10");          // true
+
+        console.log(10 === "10");         // false
+
+        console.log(true + false);        // 1
+
+        console.log(false == 0);          // true
+
+        console.log(null == undefined);   // true
+
+        console.log(5 & 1);               // 1
+
+        console.log(5 | 1);               // 5
+
+        console.log(5 ^ 1);               // 4
+
+        console.log(2 << 3);              // 16
+
+        console.log(16 >> 2);             // 4
+
+        let a20 = 10;
+        a20 += a20 -= 5;
+        console.log(a20);                 // 10
+
+        console.log(!!"hello");           // true
+
+        console.log(!"");                 // true
+
+        console.log(5 && 0 && 10);         // 0
+
+        console.log(0 || "" || "JS");      // JS
+
+        console.log(typeof (5 + "5"));     // string
+    </script>
+</body>
+
+</html>
