@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function largest(n) {
+            let max = 0;
+            while (n) {
+                let last = n % 10;
+                if (last > max) {
+                    max = last;
+                }
+                n = (n - last) / 10;
+            }
+            console.log(max);
+        }
+        largest(125852)
+
+    </script>
+</body>
+
+</html>

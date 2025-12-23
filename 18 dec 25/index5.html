@@ -1,0 +1,31 @@
+<!-- 5. Write a function to find the smallest digit in a number. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function smallest(n) {
+            let min = 9;
+
+            while (n > 0) {
+                let last = n % 10;
+                if (last < min) {
+                    min = last;
+                }
+                n = (n - last) / 10;
+            }
+            console.log(min);
+        }
+        smallest(125852);
+
+    </script>
+</body>
+
+</html>
